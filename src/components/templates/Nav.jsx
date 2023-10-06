@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Nav.css";
 
 
@@ -6,12 +7,12 @@ const Nav = (props) => {
     return (
         <aside className="menu-area">
             <nav className="menu">
-                <a href="#">
+                <Link to="/">
                     <i className="fa fa-home"></i> Início
-                </a>
-                <a href="#usuarios">
+                </Link>
+                <Link to="/usuarios">
                     <i className="fa fa-users"></i> Usuários
-                </a>
+                </Link>
             </nav>
         </aside>
     )
